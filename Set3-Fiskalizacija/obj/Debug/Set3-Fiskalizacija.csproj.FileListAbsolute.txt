@@ -1,0 +1,3 @@
+C:\Users\eimam\Source\Repos\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.AssemblyReference.cache
+C:\Users\eimam\Source\Repos\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.SuggestedBindingRedirects.cache
+C:\Users\eimam\Source\Repos\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.CoreCompileInputs.cache
