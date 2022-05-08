@@ -47,6 +47,9 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.XML" />
+    <Reference Include="Tring.Fiscal.Driver">
+      <HintPath>..\..\..\..\..\Desktop\23-Tring.Fiscal.Serve-official\v3.4.518_69575ae\Tring.Fiscal.Driver.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cis\Fiscalization.Async.cs" />
