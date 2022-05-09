@@ -1,6 +1,6 @@
 ﻿
 //POPRAVITI
-/*
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -14,9 +14,9 @@ namespace Set3_Fiskalizacija.Cis
 {
     public class CreateFiscalBill
     {
-
+        public static async Task<String> CreateBill() {
         // Kreiranje računa za za fiskalizaciju
-        private var invoice = new RacunType()
+        RacunType invoice = new RacunType()
         {
             BrRac = new BrojRacunaType()
             {
@@ -28,21 +28,21 @@ namespace Set3_Fiskalizacija.Cis
             IznosUkupno = 3.ToString("N2", CultureInfo.InvariantCulture),
             NacinPlac = NacinPlacanjaType.G,
             NakDost = false,
-            Oib = oib,
+            // Oib = oib,
             OibOper = "98642375382",
             OznSlijed = OznakaSlijednostiType.N,
             Pdv = new[]
             {
-        new PorezType
-        {
-            Stopa = 25.ToString("N2", CultureInfo.InvariantCulture),
-            Osnovica = 2.34.ToString("N2", CultureInfo.InvariantCulture),
-            Iznos = .56.ToString("N2", CultureInfo.InvariantCulture)
-        }
-    },
+            new PorezType
+            {
+                Stopa = 25.ToString("N2", CultureInfo.InvariantCulture),
+                Osnovica = 2.34.ToString("N2", CultureInfo.InvariantCulture),
+                Iznos = .56.ToString("N2", CultureInfo.InvariantCulture)
+            }
+        },
             USustPdv = true
         };
-
+        
         Byte[] cerFileRead = await File.ReadAllBytesAsync(@"Cis\\CertifikatFiskalizacija.cer");
         X509Certificate2 certificate = new X509Certificate2(cerFileRead);
 
@@ -54,23 +54,11 @@ namespace Set3_Fiskalizacija.Cis
         RacunZahtjev request = (RacunZahtjev)response.Request; // ICisRequest
         var isTrue = request.Racun == invoice;
 
-        // ili dodatno sa postavljanjem opcija
-        // fs == instanca generirane proxy klase FiskalizacijaService
-        private readonly RacunOdgovor response = await Fiscalization.SendInvoiceAsync(invoice, certificate, fs =>
-        {
-            // SOAP service settings
-            // Change service URL
-            // default = Fiscalization.SERVICE_URL_PRODUCTION
-            fs.Url = Fiscalization.SERVICE_URL_DEMO;
+        return jir;
 
-            // Set request timeout in miliseconds
-            // default = 100s
-            fs.Timeout = 2000;
-
-            // Set response signature checking
-            // default = true
-            fs.CheckResponseSignature = true;
-        });
+        }
     }
+
 }
-*/
+
+
