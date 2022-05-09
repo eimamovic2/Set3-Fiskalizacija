@@ -57,7 +57,7 @@ namespace SET3_Backend.Models
         public Boolean? USustPdv { get; set; }
         public DateTime DatVrijeme { get; set; }
         public String OznSlijed { get; set; }
-        public BrRac brojRacuna { get; set; }
+        public BrRac BrojRacuna { get; set; }
         public List<Porez> pDV { get; set; }
         public double IznosUkupno { get; set; }
         public String NacinPlac { get; set; }
@@ -74,7 +74,7 @@ namespace SET3_Backend.Models
 
             OznSlijed = oznakaslijednosti;
 
-            brojRacuna = brojracuna;
+            BrojRacuna = brojracuna;
 
             pDV = pdv;
 

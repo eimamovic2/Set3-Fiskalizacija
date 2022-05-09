@@ -1,6 +1,4 @@
 ﻿
-//POPRAVITI
-
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -10,13 +8,18 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Cis;
+using Newtonsoft.Json;
 namespace Set3_Fiskalizacija.Cis
+
+
 {
     public class CreateFiscalBill
     {
-        public static async Task<String> CreateBill() {
-        // Kreiranje računa za za fiskalizaciju
-        RacunType invoice = new RacunType()
+        public static async Task<String> CreateBill(String invoice) {
+            // Kreiranje računa za za fiskalizaciju
+        RacunType probaConvert = JsonConvert.DeserializeObject<RacunType>(invoice);
+        /*
+        RacunType invoicee = new RacunType()
         {
             BrRac = new BrojRacunaType()
             {
@@ -42,18 +45,16 @@ namespace Set3_Fiskalizacija.Cis
         },
             USustPdv = true
         };
-        
-        Byte[] cerFileRead = await File.ReadAllBytesAsync(@"Cis\\CertifikatFiskalizacija.cer");
+        */
+        Byte[] cerFileRead = File.ReadAllBytes(@"CertifikatFiskalizacija.cer");
         X509Certificate2 certificate = new X509Certificate2(cerFileRead);
 
         // Generiraj ZKI, potpiši, pošalji račun i provjeri potpis CIS odgovora
-        RacunOdgovor response = await Fiscalization.SendInvoiceAsync(invoice, certificate);
+        RacunOdgovor response = await Fiscalization.SendInvoiceAsync(probaConvert, certificate);
 
         // Odgovor sa JIR-om i zahtjevom (sa header podacima, potpisom) i poslanim računom
         string jir = response.Jir;
-        RacunZahtjev request = (RacunZahtjev)response.Request; // ICisRequest
-        var isTrue = request.Racun == invoice;
-
+        Console.WriteLine(jir);
         return jir;
 
         }
