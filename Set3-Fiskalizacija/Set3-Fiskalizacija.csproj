@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Cis\CertifikatFiskalizacija.cer" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cis\CreateFiscalBill.cs" />
+    <Compile Include="Cis\CreateFiscalBillBosnia.cs" />
     <Compile Include="Cis\Fiscalization.Async.cs" />
     <Compile Include="Cis\Fiscalization.cs" />
     <Compile Include="Cis\FiskalizacijaService.cs" />
