@@ -122,12 +122,7 @@ namespace CondorExtreme3_API.Helper
             XmlElement BrojRacuna = doc.CreateElement(string.Empty, "BrojRacuna", string.Empty);
             BrojRacuna.InnerText = "123456789";
             NoviObjekat.AppendChild(BrojRacuna);
-            if (_reclamation == false)
-                doc.Save("C:\\Tring\\Xml\\sfr.xml");
-            else
-                doc.Save("C:\\Tring\\Xml\\srr.xml");
 
-            doc.Save("C:\\Tring\\Xml\\odgovori\\stvoriOdgovor.xml");
 
         }
     }

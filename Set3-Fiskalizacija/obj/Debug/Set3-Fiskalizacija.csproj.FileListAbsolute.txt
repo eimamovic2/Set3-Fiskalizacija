@@ -2,5 +2,14 @@ C:\Users\eimam\Source\Repos\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3
 C:\Users\eimam\Source\Repos\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.SuggestedBindingRedirects.cache
 C:\Users\eimam\Source\Repos\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.CoreCompileInputs.cache
 C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.AssemblyReference.cache
-C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.SuggestedBindingRedirects.cache
 C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.CoreCompileInputs.cache
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\bin\Debug\Set3-Fiskalizacija.dll.config
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\bin\Debug\Set3-Fiskalizacija.dll
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\bin\Debug\Set3-Fiskalizacija.pdb
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\bin\Debug\Newtonsoft.Json.dll
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\bin\Debug\Tring.Fiscal.Driver.dll
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\bin\Debug\Newtonsoft.Json.xml
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.CopyComplete
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.dll
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.pdb
+C:\Users\eimam\Source\Repos\eimamovic2\Set3-Fiskalizacija\Set3-Fiskalizacija\obj\Debug\Set3-Fiskalizacija.csproj.SuggestedBindingRedirects.cache
